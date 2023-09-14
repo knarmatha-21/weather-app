@@ -1,5 +1,6 @@
 # weather-app
-React version - "^18.2.0"
+**React version - "^18.2.0"**
+
 Steps to run the project
 1. npm install
 2. npm start
