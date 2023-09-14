@@ -1,0 +1,181 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap);
+
+html {
+	scroll-behavior: smooth
+}
+
+body {
+	font-size: 14px;
+	font-weight: 400;
+	font-family: Poppins, sans-serif !important;	
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	
+	font-family: Poppins, sans-serif !important
+}
+
+.whiteFont{
+	color: #ffffff;
+}
+
+.weatherBgSection{
+	background-image: url("assets/weatherBg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	z-index: 0;
+}
+
+.overlayBg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: -1;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.weatherCard{	
+	max-width: 500px;
+	min-width: 380px;
+	min-height: 420px;
+	margin: auto;
+	padding: 20px;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	text-align: center;
+}
+
+.locationSection{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.locationInput,
+.locationInput:hover,
+.locationInput:focus,
+.locationInput:active,
+.locationInput:active:hover{
+	border-radius: 30px;
+	height: 40px;
+	border: none;
+	outline: none;
+	padding: 5px 15px;
+	font-size: 15px;
+	width: 80%;
+}
+
+.loaderSection{
+	display: flex;
+	min-height: 300px;
+	justify-content: center;
+	align-items: center;
+}
+
+.searchIcon{
+	width: 17px;
+	height: 17px;
+	object-fit: contain;
+}
+
+.searchBtn,
+.searchBtn:hover,
+.searchBtn:active,
+.searchBtn:focus,
+.searchBtn:active:hover{
+	height: 40px !important;
+	border-radius: 50% !important;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff !important;
+	border: 0 !important;
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.weatherInfoSection{
+	margin-top: 25px;
+}
+
+.weatherIconSection{
+	width: 80px;
+	height: 80px;
+	margin: auto;
+}
+
+.weatherIcon{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.locName{
+	font-size: 18px;
+	margin-bottom: 10px;
+	white-space: normal;
+	word-break: break-word;
+}
+
+.bottomSection{
+	display: flex;
+	align-items: center;
+	margin-top: 35px;
+}
+
+.halfWidth{
+	width: 50%;
+}
+
+.bottomSectionTextSpace{
+	margin-bottom: 0px;
+}
+
+.smallText{
+	font-size: 12px;
+	color:#e7e1e1;
+}
+
+.errorMessage{
+	color: red;
+    font-size: 12px;
+    text-align: left;
+    font-weight: 700;
+    margin: 5px;
+}
+
+.toggleSection{
+	margin-top: 35px;
+}
+
+.toggleBtnStyle input,
+.toggleBtnStyle input:focus,
+.toggleBtnStyle input:checked,
+.toggleBtnStyle input:hover{
+	outline: 0;
+	box-shadow: none;
+}
+
+.spinnerColor{
+	color:#ffffff
+}
+
+.title{	
+	padding: 30px 15px;
+}
