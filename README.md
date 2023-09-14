@@ -1,6 +1,7 @@
 # weather-app
-npm install
-npm start
+Steps to run the project
+1. npm install
+2. npm start
 
 Libraries to be added
 1. npm install axios
