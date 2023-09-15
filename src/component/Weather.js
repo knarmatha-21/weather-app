@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import Loader from "./Loader";
 import searchIcon from '../assets/searchIcon.png'
+import noData from '../assets/noData.png'
 
 
 
@@ -37,6 +38,13 @@ const Weather = () =>{
         toggle ? setToggle(false) : setToggle(true);
     }
 
+    const handleKeyPress = (e) => {
+        //it triggers by pressing the enter key
+      if (e.keyCode === 13) {
+        fetchData();
+      }
+    };
+
     return(
         <div className="weatherBgSection">
             <div className="overlayBg"></div>
@@ -45,7 +53,9 @@ const Weather = () =>{
             </div>
             <div className="weatherCard">
                 <div className="locationSection">
-                    <input className="locationInput" type="text" value={location} placeholder="Enter location" onChange={e=>setLocation(e.target.value)}/>
+                    <input className="locationInput" type="text" value={location} placeholder="Enter location (city)" onChange={e=>setLocation(e.target.value)}
+                    onKeyDown={handleKeyPress}
+                    />
                     <Button onClick={fetchData} className="searchBtn">
                         <img src={searchIcon} alt="Search" className="searchIcon"/>
                     </Button>
@@ -91,6 +101,13 @@ const Weather = () =>{
                         <p className="whiteFont">{error}</p>
                     </div>             
                 </div>
+                }
+                {
+                    !details && !error && 
+                        <div className="loaderSection">
+                            <img src={noData} alt="No data" className="noDataImg"/>
+                            <p className="whiteFont">Enter location to get weather forecast</p>
+                        </div>
                 }
                 </>:
                     <div className="loaderSection">
