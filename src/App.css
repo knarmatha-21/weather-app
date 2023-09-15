@@ -83,6 +83,7 @@ h6 {
 
 .loaderSection{
 	display: flex;
+	flex-direction: column;
 	min-height: 300px;
 	justify-content: center;
 	align-items: center;
@@ -182,4 +183,10 @@ h6 {
 
 .fontMedium{
 	font-size: 20px;
+}
+
+.noDataImg{
+	width: 100%;
+	max-width: 55px;
+	margin-bottom: 7px;
 }
