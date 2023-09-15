@@ -45,7 +45,7 @@ const Weather = () =>{
             </div>
             <div className="weatherCard">
                 <div className="locationSection">
-                    <input className="locationInput" type="text" dafaultValue='London' value={location} placeholder="Enter location" onChange={e=>setLocation(e.target.value)}/>
+                    <input className="locationInput" type="text" value={location} placeholder="Enter location" onChange={e=>setLocation(e.target.value)}/>
                     <Button onClick={fetchData} className="searchBtn">
                         <img src={searchIcon} alt="Search" className="searchIcon"/>
                     </Button>
