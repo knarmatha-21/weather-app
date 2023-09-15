@@ -64,11 +64,11 @@ const Weather = () =>{
                     <div className="smallText">{details.weather.length > 0 && details.weather[0].description}</div>
                     <div className="bottomSection">
                         <div className="whiteFont halfWidth">
-                            <p className="bottomSectionTextSpace">{details.main.humidity} %</p>
+                            <p className="bottomSectionTextSpace fontMedium">{details.main.humidity} %</p>
                             <p className="smallText bottomSectionTextSpace">Humidity</p>                            
                         </div>
                         <div className="whiteFont halfWidth">                            
-                            <p className="bottomSectionTextSpace">{details.wind.speed} m/s</p>
+                            <p className="bottomSectionTextSpace fontMedium">{details.wind.speed} m/s</p>
                             <p className="smallText bottomSectionTextSpace">Wind Speed</p>
                         </div>
                     </div> 
